@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 12px 0px 8px 30px;
+}
+span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #bbb;
+  margin: 10px 0px 10px 0px;
+}
+a {
+  font-size: 21px;
+  color: #ccc;
+  font-weight: bold;
+  padding: 10px;
+}
+a:hover {
+  color: #333;
+}
+
+h1 {
+  padding: 3% 0 3% 0;
+  text-align: center;
+  font-size: 50px;
+}
+.back {
+  position: fixed; bottom: 3vw; left: 2vw;
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  border: 1px solid #888;
+  background-image: url(assents/img/free-icon-arrow-left-6423875.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eee;
+  opacity: 0.7;
+}
+hr {
+  display: block;
+  width: 90%;
+  text-align: center;
+  /* margin: 10% 0 0 0; */
+}
+
+
+.temburins-frame {
+  position: relative;
+  display: flex;
+  margin: 5% 0% 6% 18%;
+  /* background-color: antiquewhite; */
+}
+.temburins-frame img {
+  position: relative;
+  width: 459px;
+  z-index: 1;
+}
+.temburins-device {
+  /* position: relative; */
+  position: absolute; top: 1.4vw; left: 1.2vw;
+  width: 424px; height: 255px;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 2;
+}
+.temburins-iframe {
+  position: absolute; 
+  /* top: -57vw; left: -43.5vw; */
+  width: 100%; height: 100%;
+  overflow: scroll;
+}
+.temburins-iframe iframe {
+  display: block;
+  width: 1720px; height: 2238px;
+  /* object-fit: cover; */
+  transform: scale(0.25);
+  pointer-events: auto;
+  overflow: auto;
+  transform-origin: top left;
+  
+}
+
+.temburins-txt {
+  position: relative;
+  display: flex;
+  margin-left: 8%;
+  /* background-color: aqua; */
+}
+.temburins-span {
+  display: flex;
+  flex-direction: column;
+}
+.temburins-p {
+  display: flex;
+  flex-direction: column;
+}
+
+.temburins-link {
+  position: absolute; left: 3%; bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  /* background-color: aliceblue; */
+}
+
+
+.burmula-frame {
+  position: relative;
+  display: flex;
+  margin: 6% 10% 5% 20%;
+}
+.mac {
+  position: relative;
+  width: 459px;
+  z-index: 1;
+  margin-left: 16%;
+}
+.mac-device {
+  position: absolute; top: 1.5vw; right: 11.5vw;
+  width: 424px; height: 253px;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.mac-iframe {
+  position: absolute; 
+  /* left: 48%; top: 2%; */
+  width: 100%; height: 100%;
+  /* overflow: scroll; */
+}
+.mac-iframe iframe {
+  width: 1724px; height: 1020px;
+  transform: scale(0.25);
+  pointer-events: auto;
+  overflow: auto;
+  transform-origin: top left;
+}
+
+.ipad-frame {
+  position: absolute; top: 10vw; right: 8vw;
+  z-index: 3;
+}
+.ipad {
+  position: relative;
+  width: 158px; height: 241px;
+  
+}
+.ipad-device {
+  position: absolute; top: 0.95vw; left: 0.5vw;
+  width: 145px; height: 202px;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 4;
+}
+.ipad-iframe {
+  position: absolute;
+  width: 100%; height: 100%;
+}
+.ipad-iframe iframe {
+  width: 692px; height: 965px;
+  transform: scale(0.21);
+  pointer-events: auto;
+  overflow: auto;
+  transform-origin: top left;
+}
+
+/* phone */
+.phon-frame {
+  position: absolute; top: 7.5vw; right: 12vw;
+  z-index: 5;
+}
+.phon {
+  position: relative;
+  width: 65px; height: 132px;
+}
+.phon-device {
+  position: absolute; top: 0.25vw; left: 0.2vw;
+  width: 59px; height: 126px;
+  overflow: hidden;
+  z-index: 6;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.phon-iframe {
+  position: absolute;
+  width: 100%; height: 100%;
+}
+.phon-iframe iframe {
+  width: 480px; height: 987px;
+  transform: scale(0.13);
+  pointer-events: auto;
+  overflow: auto;
+  transform-origin: top left;
+}
+
+
+.burmula-txt {
+  position: relative;
+  display: flex;
+}
+.burmula-span {
+  display: flex;
+  flex-direction: column;
+}
+.burmula-p {
+  display: flex;
+  flex-direction: column;
+}
+.burmula-link {
+  position: absolute; left: 3%; bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}

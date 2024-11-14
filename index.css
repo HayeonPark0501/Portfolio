@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+a {
+  color: #333;
+}
+
+header {
+  width: 100%;
+  padding-top: 3%;
+  display: flex;
+}
+
+.im-frame {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  width: 370px;
+  margin-left: 17%;
+  /* background-color: aqua; */
+}
+.im {
+  display: inline-block;
+  font-size: 200px;
+  font-weight: bolder;
+  transition: transform 0.3s ease; /* 부드러운 전환 효과 */;
+  /* background-color: azure; */
+}
+.im:hover {
+  transform: scale(1.1); /* 확대 효과 */
+  color: #000;
+}
+
+.im-click {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75px; height: 80px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* background-color: aliceblue; */
+}
+
+/* .im:hover 상태에서 .click 요소가 서서히 나타나도록 설정 */
+.im:hover + .im-click, .ready-frame:hover .ready-click {
+  opacity: 1; /* 선명하게 표시 */
+}
+.arrow {
+  width: 35px;
+  margin-top: 4px;
+}
+.woman {
+  width: 74px;
+  margin-bottom: 10px;
+}
+
+.im-click p, .ready-click p {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+.frame {
+  display: flex;
+  justify-content: space-between;
+  margin: 0% 30%;
+  margin-top: -5%;
+  /* background-color: aqua; */
+}
+.ready-frame {
+  display: flex;
+  align-items: first baseline;
+}
+.ready-click {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px; height: 80px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-right: 30px;
+  /* background-color: aliceblue; */
+}
+.ready-click img {
+  width: 35px;
+  transform: scaleX(-1);
+  margin-bottom: 4px;
+}
+.ready-click p {
+  margin-right: 8px;
+}
+.ready {
+  font-size: 200px;
+  font-weight: bold;
+  margin-right: 5%;
+  transition: transform 0.3s ease; /* 부드러운 전환 효과 */;
+  /* background-color: aliceblue; */
+}
+.ready:hover {
+  transform: scale(1.1); /* 확대 효과 */
+  color: #000;
+}
+
+.I {
+  font-size: 200px;
+  font-weight: bold;
+  transition: transform 0.3s ease; /* 부드러운 전환 효과 */;
+  /* margin: 0 0 0% -5%; */
+  /* background-color: aliceblue; */
+}
+.I:hover {
+  transform: scale(1.1); /* 확대 효과 */
+  color: red;
+}
+.I:hover + .click {
+  opacity: 1;
+}
+.click {
+  font-size: 30px;
+  color: red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 10%;
+}
+footer p {
+  display: inline-block;
+}
+.name {
+  width: 150px;
+  text-align: end;
+}
+.i {
+  padding-bottom: 10px;
+}
