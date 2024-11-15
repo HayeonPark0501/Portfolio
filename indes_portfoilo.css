@@ -45,8 +45,7 @@ h1 {
 hr {
   display: block;
   width: 90%;
-  text-align: center;
-  /* margin: 10% 0 0 0; */
+  margin: 0 auto;
 }
 
 
@@ -109,11 +108,24 @@ hr {
   /* background-color: aliceblue; */
 }
 
+/* 초기 위치와 투명도 설정 */
+.temburins-frame, .burmula-frame {
+  opacity: 0;
+  transform: translateX(-100px); /* 초기 위치 설정 */
+  transition: all 0.8s ease; /* 트랜지션 효과 */
+}
+
+/* 활성화 상태 설정 */
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .burmula-frame {
   position: relative;
   display: flex;
-  margin: 6% 10% 5% 20%;
+  margin: 14% 10% 9% 20%;
+  transform: translateX(100px); /* 오른쪽에서 나타나는 초기 위치 설정 */
 }
 .mac {
   position: relative;

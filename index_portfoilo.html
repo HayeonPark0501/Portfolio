@@ -41,7 +41,7 @@
 
       <div class="temburins-link">
         <a href="#">제작과정</a>
-        <a href="#">사이트 바로가기</a>
+        <a href="https://hayeonpark0501.github.io/Temburins/">사이트 바로가기</a>
       </div>
     </div>
   </div>
@@ -71,7 +71,7 @@
 
       <div class="burmula-link">
         <a href="#">제작과정</a>
-        <a href="#">사이트 바로가기</a>
+        <a href="https://hayeonpark0501.github.io/Burmula/">사이트 바로가기</a>
       </div>
     </div>
 
@@ -80,7 +80,7 @@
       <img class="mac" src="assents/img/mac.png" alt="mac">
       <div class="mac-device">
         <div class="mac-iframe">
-          <iframe src="http://paperhuman.dothome.co.kr/" frameborder="burmula" scrolling="no"></iframe>
+          <iframe src=" https://hayeonpark0501.github.io/Burmula/" frameborder="burmula" scrolling="no"></iframe>
         </div>
       </div>
       <!-- ipad -->
@@ -88,7 +88,7 @@
         <img class="ipad" src="assents/img/tablet.png" alt="tablet">
         <div class="ipad-device">
           <div class="ipad-iframe">
-            <iframe src="http://paperhuman.dothome.co.kr/" frameborder="burmula" scrolling="no"></iframe>
+            <iframe src=" https://hayeonpark0501.github.io/Burmula/" frameborder="burmula" scrolling="no"></iframe>
           </div>
         </div>
         
@@ -97,7 +97,7 @@
         <img class="phon" src="assents/img/phone.png" alt="phone">
         <div class="phon-device">
           <div class="phon-iframe">
-            <iframe src="http://paperhuman.dothome.co.kr/" frameborder="burmula" scrolling="no"></iframe>
+            <iframe src=" https://hayeonpark0501.github.io/Burmula/" frameborder="burmula" scrolling="no"></iframe>
           </div>
         </div>
       </div>
@@ -111,4 +111,31 @@
   </div>
   
 </body>
+
+<script>
+  // 요소가 보이는지 확인하는 함수
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom >= 0;
+  }
+
+  // 애니메이션 적용 함수
+  function applyAnimation() {
+    const temburinsFrame = document.querySelector('.temburins-frame');
+    const burmulaFrame = document.querySelector('.burmula-frame');
+    
+    // 요소가 화면에 나타나면 'show' 클래스를 추가
+    if (isInViewport(temburinsFrame)) {
+      temburinsFrame.classList.add('show');
+    }
+    if (isInViewport(burmulaFrame)) {
+      burmulaFrame.classList.add('show');
+    }
+  }
+
+  // 페이지 로드 및 스크롤 시 함수 호출
+  window.addEventListener('scroll', applyAnimation);
+  document.addEventListener('DOMContentLoaded', applyAnimation);
+</script>
+
 </html>
