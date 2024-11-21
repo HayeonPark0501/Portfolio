@@ -52,7 +52,7 @@ hr {
 .temburins-frame {
   position: relative;
   display: flex;
-  margin: 5% 0% 6% 18%;
+  margin: 5vw 0vw 6vw 18vw;
   /* background-color: antiquewhite; */
 }
 .temburins-frame img {
@@ -101,7 +101,7 @@ hr {
 }
 
 .temburins-link {
-  position: absolute; left: 3%; bottom: 0%;
+  position: absolute; left: 3vw; bottom: 0vw;
   display: flex;
   justify-content: space-between;
   width: 350px;
@@ -124,14 +124,14 @@ hr {
 .burmula-frame {
   position: relative;
   display: flex;
-  margin: 14% 10% 9% 20%;
+  margin: 14vw 10vw 9vw 20vw;
   transform: translateX(100px); /* 오른쪽에서 나타나는 초기 위치 설정 */
 }
 .mac {
   position: relative;
   width: 459px;
   z-index: 1;
-  margin-left: 16%;
+  margin-left: 16vw;
 }
 .mac-device {
   position: absolute; top: 1.5vw; right: 11.5vw;
@@ -226,7 +226,7 @@ hr {
   flex-direction: column;
 }
 .burmula-link {
-  position: absolute; left: 3%; bottom: 0%;
+  position: absolute; left: 3vw; bottom: 0vw;
   display: flex;
   justify-content: space-between;
   width: 350px;
