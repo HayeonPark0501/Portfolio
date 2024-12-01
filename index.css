@@ -10,7 +10,7 @@ a {
 
 header {
   width: 100%;
-  padding-top: 3%;
+  padding-top: 3vw;
   display: flex;
 }
 
@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: last baseline;
   width: 370px;
-  margin-left: 17%;
+  margin-left: 17vw;
   /* background-color: aqua; */
 }
 .im {
@@ -70,8 +70,8 @@ main {
 .frame {
   display: flex;
   justify-content: space-between;
-  margin: 0% 30%;
-  margin-top: -5%;
+  margin: 0% 30vw;
+  margin-top: -5vw;
   /* background-color: aqua; */
 }
 .ready-frame {
@@ -99,7 +99,7 @@ main {
 .ready {
   font-size: 200px;
   font-weight: bold;
-  margin-right: 5%;
+  margin-right: 5vw;
   transition: transform 0.3s ease; /* 부드러운 전환 효과 */;
   /* background-color: aliceblue; */
 }
@@ -127,6 +127,15 @@ main {
   color: red;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+/* fadeout 효과 */
+.fade-in {
+  opacity: 0; /* 기본적으로 보이지 않음 */
+  transition: opacity 1s ease-in-out; /* 부드러운 페이드 인 효과 */
+}
+.visible {
+  opacity: 1; /* 보이게 설정 */
 }
 
 footer {

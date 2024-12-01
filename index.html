@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <div class="im-frame">
+    <div class="im-frame fade-in">
       <a class="im" href="index_aboutme.html">I'm</a>
       <div class="im-click">
         <img class="arrow" src="assents/img/arrow.png" alt="arrow">
@@ -21,7 +21,7 @@
 
   <main>
     <div class="frame">
-      <div class="ready-frame">
+      <div class="ready-frame fade-in">
         <div class="ready-click">
           <p>Portfolio</p>
           <img src="assents/img/arrow.png" alt="arrow">
@@ -29,14 +29,14 @@
         <a class="ready" href="index_portfoilo.html">Ready</a>
         
       </div>
-      <a class="I" href="index_stress.html">!</a>
+      <a class="I fade-in" href="index_stress.html">!</a>
       <div class="click">
         <p>click!</p>
       </div>
     </div>
   </main>
   
-  <footer>
+  <footer class="fade-in">
     <p class="email">email : qmwmem46@gmail.com</p>
 
     <p class="year">2024 Portfolio</p>
@@ -49,4 +49,22 @@
   </footer>
 
 </body>
+<script></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // 1. 페이지 로딩 후 각 요소를 가져오기
+    const imFrame = document.querySelector('.im-frame');
+    const readyFrame = document.querySelector('.ready-frame');
+    const iElement = document.querySelector('.I');
+    const footer = document.querySelector('footer');
+
+    // 2. 순차적으로 클래스를 추가하여 페이드 인 효과
+    setTimeout(() => imFrame.classList.add('visible'), 500); // 첫 번째 요소
+    setTimeout(() => readyFrame.classList.add('visible'), 1500); // 두 번째 요소
+    setTimeout(() => iElement.classList.add('visible'), 2500); // 세 번째 요소
+    setTimeout(() => footer.classList.add('visible'), 3500); // 마지막 요소 (footer)
+  });
+</script>
+
+
 </html>
