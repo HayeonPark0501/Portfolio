@@ -39,6 +39,7 @@
             <span class="year-2020">2020</span>
           </div>
           <div class="p">
+            <p>SBS 아카데미 UIUX 디자인 실무양성과정 수료</p>
             <p>SBS 아카데미 UIUX 반응형 웹디자인/퍼블리셔 실무양성과정 수료</p>
             <p>배화여자대학교 패션산업학과 졸업</p>
             <p>홍익대학교사범대학부속 여자고등학교 졸업</p>
@@ -50,7 +51,10 @@
         <h3>LICENSE</h3>
         <div class="info">
           <span>2024</span>
-          <p>GTQ 포토샵 1급</p>
+          <div class="p">
+            <p>웹디자인기능사</p>
+            <p>GTQ 1급</p>
+          </div>
         </div>
         
       </div>
@@ -118,7 +122,7 @@
               <p>Java Script</p>
               <div class="js-box">
                 <div class="skill-box"></div>
-                <p>20%</p>
+                <p>35%</p>
               </div>
             </div>
           </div>
@@ -129,4 +133,39 @@
   </div>
   
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const skillBoxes = document.querySelectorAll(".skill-box");
+    
+    skillBoxes.forEach((box) => {
+      const parentClass = box.parentElement.className;
+      let percentage = 0;
+
+      // 클래스에 따라 백분율 할당
+      switch (parentClass) {
+        case "poto-box":
+        case "ai-box":
+          percentage = 100;
+          break;
+        case "figma-box":
+          percentage = 80;
+          break;
+        case "html-box":
+        case "css-box":
+          percentage = 90;
+          break;
+        case "js-box":
+          percentage = 45;
+          break;
+      }
+
+      // 애니메이션 트리거
+      setTimeout(() => {
+        box.style.backgroundImage = `linear-gradient(to right, #333 ${percentage}%, #eee 0%)`;
+        box.style.backgroundSize = `${percentage}% 100%`;
+      }, 200); // 페이지 로딩 후 약간의 지연을 추가
+    });
+  });
+</script>
+
 </html>

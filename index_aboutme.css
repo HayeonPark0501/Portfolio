@@ -153,22 +153,34 @@ body {
   margin-left: 5px;
   font-weight: 500;
 }
+
+/* 기본 상태: background-size를 0%로 설정 */
+.skill-box {
+  width: 175px;
+  height: 15px;
+  background-color: #eee;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: background-size 1.5s ease-in-out; /* 애니메이션 효과 */
+}
+
 .poto-box .skill-box, .ai-box .skill-box {
   width: 175px; height: 15px;
-  background-color: #333;
+  /* background-color: #333; */
 }
 .figma-box .skill-box {
   width: 175px; height: 15px;
-  background-image: linear-gradient(to right, #333 70%, #eee 30%);
+  /* background-image: linear-gradient(to right, #333 70%, #eee 30%); */
   margin-left: 8px;
 }
 .html-box .skill-box, .css-box .skill-box {
   width: 175px; height: 15px;
-  background-image: linear-gradient(to right, #333 80%, #eee 20%);
+  /* background-image: linear-gradient(to right, #333 80%, #eee 20%); */
   margin-left: 17px;
 }
 .js-box .skill-box {
   width: 175px; height: 15px;
-  background-image: linear-gradient(to right, #333 35%, #eee 0%);
+  /* background-image: linear-gradient(to right, #333 35%, #eee 0%); */
   margin-left: 17px;
 }
