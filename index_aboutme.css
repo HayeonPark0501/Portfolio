@@ -65,7 +65,7 @@ body {
 }
 
 .info-content {
-  padding: 5vh 0% 0% 10vw;
+  padding: 5vh 0% 0% 5vw;
   /* background-color: aqua; */
 }
 .info-content h3 {
@@ -167,6 +167,6 @@ body {
 }
 .js-box .skill-box {
   width: 175px; height: 15px;
-  background-image: linear-gradient(to right, #333 20%, #eee 0%);
+  background-image: linear-gradient(to right, #333 35%, #eee 0%);
   margin-left: 17px;
 }
