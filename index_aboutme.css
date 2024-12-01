@@ -37,7 +37,7 @@ body {
   display: flex
 }
 .Aboutme-content {
-  padding: 3vh 6vw 0vh      Q0vw;
+  padding: 3vh 6vw 0vh 10vw;
   /* background-color: #888; */
   margin-left: 6vw;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .info-content {
-  padding: 5vh 0% 0% 5vw;
+  padding: 5vh 0% 0% 10vw;
   /* background-color: aqua; */
 }
 .info-content h3 {
