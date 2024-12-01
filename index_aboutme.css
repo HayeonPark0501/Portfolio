@@ -13,6 +13,11 @@ span {
   color: #bbb;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .back {
   position: fixed; bottom: 3vw; left: 2vw;
   width: 80px; height: 80px;
@@ -30,7 +35,7 @@ span {
   display: flex
 }
 .Aboutme-content {
-  padding: 3vh 6vw 0vh 0vw;
+  padding: 3vh 6vw 0vh      Q0vw;
   /* background-color: #888; */
   margin-left: 6vw;
 }
