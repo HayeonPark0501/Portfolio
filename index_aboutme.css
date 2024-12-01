@@ -17,6 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh; /* 화면 높이만큼의 공간 확보 */
+  margin: 0;
 }
 .back {
   position: fixed; bottom: 3vw; left: 2vw;
