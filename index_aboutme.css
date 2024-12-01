@@ -26,10 +26,11 @@ span {
 }
 
 #wrap {
+  margin: 0 auto;
   display: flex
 }
 .Aboutme-content {
-  padding: 3vh 6vw 0vh 10vw;
+  padding: 3vh 6vw 0vh 0vw;
   /* background-color: #888; */
   margin-left: 6vw;
 }
