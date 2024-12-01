@@ -53,6 +53,8 @@ body {
 .Aboutme {
   display: flex;
   padding: 8px 5px;
+  background-color: #bbb;
+  margin-top: 3vh;
 }
 .Aboutme span {
   display: block;
