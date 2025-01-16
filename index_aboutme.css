@@ -37,7 +37,7 @@ body {
   display: flex
 }
 .Aboutme-content {
-  padding: 3vh 8vw 0vh 8vw;
+  padding: 7vh 8vw 0vh 8vw;
   /* background-color: #888; */
   /* margin-left: 6vw; */
 }
@@ -49,12 +49,13 @@ body {
 .Aboutme-content img {
   width: 310px;
   border-radius: 50%;
+  margin-top: 5vh;
 }
 .Aboutme {
   display: flex;
   padding: 8px 5px;
   /* background-color: #bbb; */
-  margin-top: 4vh;
+  margin-top: 6vh;
 }
 .Aboutme span {
   display: block;
