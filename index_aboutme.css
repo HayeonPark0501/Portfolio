@@ -103,13 +103,13 @@ body {
 .skill-content {
   display: flex;
 }
-.poto, .ai, .figma {
+.poto, .ai, .xd, .figma {
   display: flex;
   width: 330px;
   margin: 0 3vh 4vh 0;
   /* background-color: #ccc; */
 }
-.html, .css, .js {
+.html, .css, .js, .vs {
   display: flex;
   width: 330px;
   margin: 0 3vh 4vh 3vh;
@@ -119,40 +119,47 @@ body {
   width: 66px;
   margin-right: 15px;
 }
+.xd img {
+  width: 70px;
+}
 .figma img {
   width: 81px; 
   margin-left: -7px;
 }
-.html img, .css img, .js img {
+.html img, .css img, .js img, .vs img {
   width: 60px;
   margin-left: 5px;
 }
 
-.poto-skill, .ai-skill, .figma-skill, .html-skill, .css-skill, .js-skill {
+.poto-skill, .ai-skill, .figma-skill, .html-skill, .css-skill, .js-skill, .xd-skill, .vs-skill {
   display: flex;
   flex-direction: column;
 }
-.poto-skill > p, .ai-skill > p {
+.poto-skill > p, .ai-skill > p, .xd-skill > p {
   margin-top: 13px;
+}
+.xd-skill p {
+  margin-left: 11px;
 }
 .figma-skill > p {
   margin-top: 13px;
   margin-left: 8px;
 }
-.html-skill > p, .css-skill > p, .js-skill > p {
+.html-skill > p, .css-skill > p, .js-skill > p, .vs-skill > p {
   margin-top: 13px;
   margin-left: 17px;
 }
-.poto-box, .ai-box, .figma-box, .html-box, .css-box, .js-box {
+.poto-box, .ai-box, .figma-box, .html-box, .css-box, .js-box, .xd-box, .vs-box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.poto-box p, .ai-box p, .figma-box p, .html-box p, .css-box p, .js-box p {
+.poto-box p, .ai-box p, .figma-box p, .html-box p, .css-box p, .js-box p, .xd-box p, .vs-box p {
   font-size: 20px;
   margin-left: 5px;
   font-weight: 500;
 }
+
 
 /* 기본 상태: background-size를 0%로 설정 */
 .skill-box {
@@ -169,6 +176,10 @@ body {
   width: 175px; height: 15px;
   /* background-color: #333; */
 }
+.xd-box .skill-box {
+  width: 175px; height: 15px;
+  margin-left: 11px;
+}
 .figma-box .skill-box {
   width: 175px; height: 15px;
   /* background-image: linear-gradient(to right, #333 70%, #eee 30%); */
@@ -179,7 +190,7 @@ body {
   /* background-image: linear-gradient(to right, #333 80%, #eee 20%); */
   margin-left: 17px;
 }
-.js-box .skill-box {
+.js-box .skill-box, .vs-box .skill-box {
   width: 175px; height: 15px;
   /* background-image: linear-gradient(to right, #333 35%, #eee 0%); */
   margin-left: 17px;
